@@ -41,3 +41,6 @@ ABILITYCATEGORY:Wizard of White Robes Prohibit School	VISIBLE:QUALIFY	EDITABLE:Y
 
 
 ABILITYCATEGORY:Academic Priest				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Academic Priest																															PLURAL:Academic Priest			DISPLAYLOCATION:Feats
+
+ABILITYCATEGORY:Handler Class Feature		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Handler Class Feature	PLURAL:Handler Class Features		DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Handler Special Ability			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Special Ability	TYPE:HandlerAbilities.HandlerSpecialAbilitySelection									PLURAL:Handler Special Abilities		DISPLAYLOCATION:Class Features

@@ -57,6 +57,11 @@ Medallion of the Sun	TYPE:Artifact.Minor	COST:1000000000	SOURCELONG:Dragonlance 
 
 ###Block:
 # Equipment Name	Output Name				Type		Cost		Weight	Source, Long Desc.				Source, Short Desc.	Source Page
-Coin (Steel)	OUTPUTNAME:Steel piece (stl)	TYPE:Coin	COST:1	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
-Coin (Iron)		OUTPUTNAME:Iron piece (ip)	TYPE:Coin	COST:0.5	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
-Coin (Bronze)	OUTPUTNAME:Bronze piece (bp)	TYPE:Coin	COST:0.5	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+#Added Missing Coins and KEY Tag to keep Krynn Coins Seperat from Base or any other Settings User Loads. 
+Coin (Steel)	KEY:Steel_Coin_Krynn	OUTPUTNAME:Steel piece (stl)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:1		WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+Coin (Iron)	KEY:Iron_Coin_Krynn	OUTPUTNAME:Iron piece (ip)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:0.5	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+Coin (Bronze)	KEY:Bronze_Coin_Krynn	OUTPUTNAME:Bronze piece (bp)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:0.5	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+Coin (Copper)	KEY:Copper_Coin_Krynn	OUTPUTNAME:Copper piece (cp)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:0.01	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+Coin (Gold)	KEY:Gold_Coin_Krynn	OUTPUTNAME:Gold piece (gp)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:0.03	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+Coin (Silver)	KEY:Silver_Coin_Krynn	OUTPUTNAME:Silver piece (sp)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:0.05	WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196
+Coin (Platinum)	KEY:Platinum_Coin_Krynn	OUTPUTNAME:Platinum peice (pp)	TYPE:Coin.Krynn	SORTKEY:Krynn_Coin	COST:5		WT:0.02	SOURCELONG:Dragonlance Campaign Setting	SOURCESHORT:dcs	SOURCEPAGE:p.196

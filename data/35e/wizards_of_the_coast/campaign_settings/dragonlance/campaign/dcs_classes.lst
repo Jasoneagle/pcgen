@@ -287,3 +287,20 @@ CLASS:Righteous Zealot	STARTSKILLPTS:4	CSKILL:Bluff|Concentration|Diplomacy|Gath
 2	ABILITY:Righteous Zealot Class Feature|AUTOMATIC|Righteous Zealot ~ Resist Enchantment
 3	ABILITY:Righteous Zealot Class Feature|AUTOMATIC|Righteous Zealot ~ Gather Followers
 10	ABILITY:Righteous Zealot Class Feature|AUTOMATIC|Righteous Zealot ~ Martyr's Luck
+
+###Block
+##Added #Handler (Kender) as an Alt for Kender (Referenced of p.52 of Campign Setting Book)
+# Class Name	Hit Dice	Type				Class Type		Abbreviation	Source Page		Define		Combat bonus															Modify VAR			Monster Role	Bonus
+CLASS:Handler		HD:6		TYPE:PC.Base.NonCaster	FACT:ClassType|PC	FACT:Abb|Han		SOURCEPAGE:p.	DEFINE:HandlerLVL|0	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseAlternateBABProgression,0	BONUS:VAR|HandlerLVL|CL	ROLE:Skill		BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Fortitude,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+CLASS:Handler	PRERACE:1,Kender	OUTPUTNAME:Handler
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Handler		STARTSKILLPTS:8	CSKILL:Appraise|Balance|Bluff|Climb|TYPE=Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|TYPE=KnowledgeLocal|Listen|Move Silently|Open Lock|TYPE=Perform|TYPE=Profession|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Magic Device|Use Rope
+###Block:
+1	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Weapon and Armor Proficiency|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerProficiencies
+1	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Sneak Attack|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerSneakAttack
+1	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Trapfinding|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerTrapfinding
+2	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Evasion|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerEvasion
+3	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Trap Sense|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerTrapSense
+4	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Uncanny Dodge|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerUncannyDodge
+8	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Improved Uncanny Dodge|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerImprovedUncannyDodge
+10	ABILITY:Handler Class Feature|AUTOMATIC|Handler ~ Special Abilities|!PREABILITY:1,CATEGORY=ACF,TYPE.HandlerSpecialAbilities
