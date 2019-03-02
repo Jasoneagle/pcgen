@@ -1,0 +1,105 @@
+# Sun Feb 24 17:23:11 2019 -- reformated by PCGen PrettyLST v6.08.00
+SOURCELONG:Races of Ansalon	SOURCESHORT:RoA	SOURCEDATE:2007-07
+###Racial Traits
+
+#Ability Name								Unique Key						Category of Ability		Type							Description																																																			Auto Weapon Prof			Ability																																																																					Save bonus							Bonus to skill								Source Page
+# Ability Name			Unique Key						Category of Ability	Type						Ability
+Kender (Krynn)			KEY:Kender ~ Kender (Krynn)			CATEGORY:Internal		TYPE:KenderSubrace.Krynn_Campaign	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Weapon Familiarity	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Save Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Spot Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Thievery Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Lack of Focus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Taunt	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Fearlessness
+Afflicted Kender (Krynn)	KEY:Kender ~ Afflicted Kender (Krynn)	CATEGORY:Internal		TYPE:KenderSubrace.Krynn_Campaign	ABILITY:Kender Race Trait|AUTOMATIC|Afflicted Kender ~ Skill Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Save Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Spot Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Kender ~ Thievery Bonus	ABILITY:Kender Race Trait|AUTOMATIC|Afflicted Kender ~ Weapon Familiarity
+
+###Block:Racial
+##Kender
+# Ability Name							Unique Key					Category of Ability		Type							Description																																																			Auto Weapon Prof			Save bonus							Bonus to skill							Source Page
+Weapon Familiarity						KEY:Kender ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Kender treat any Kender exotic weapon as a simple weapon.																																										AUTO:WEAPONPROF|TYPE=Kender																		SOURCEPAGE:P.144
++1 racial bonus on all saving throws			KEY:Kender ~ Save Bonus			CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Due to their eternal optimism and inherent belief in the goodness of all people, kender manage to survive and thrive in a world that is often hostile to them.																														BONUS:SAVE|Fortitude,Reflex,Will|1|TYPE=Racial										SOURCEPAGE:P.144
++2 racial bonus on Spot checks				KEY:Kender ~ Spot Bonus			CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality																																																																		BONUS:SKILL|Spot|2|TYPE=Racial				SOURCEPAGE:P.144
++2 racial bonus on Open Locks and Sleight of Hand	KEY:Kender ~ Thievery Bonus		CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Kender can use these two abilities as though they were trained, even if they have 0 ranks in the skills.																																															BONUS:SKILL|Open Lock,Sleight of Hand|2|TYPE=Racial	SOURCEPAGE:P.144
+Lack of Focus							KEY:Kender ~ Lack of Focus		CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Kender have a -4 racial penalty on Concentration checks. Kender don’t necessarily lack magical talent, but their general lack of focus discourages them from pursuing careers in magic.																																		BONUS:SKILL|Concentration|-4|TYPE=Racial			SOURCEPAGE:P.144
+Taunt									KEY:Kender ~ Taunt			CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Kender have an uncanny insight into the motivations and characteristics of other races. They can use this insight to unleash a verbal barrage of sarcasm, insults, and crude comments that cause the targeted victims to lose their temper. Kender receive a +4 racial bonus on all Bluff checks to taunt someone.														BONUS:SKILL|Bluff|4|TYPE=Racial				SOURCEPAGE:P.144
+Fearlessness							KEY:Kender ~ Fearlessness		CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Kender are immune to fear, magical and otherwise.																																																																	SOURCEPAGE:P.144
+###Block
+##Afflicted Kender Racial Traits
+# Ability Name								Unique Key						Category of Ability		Type							Description																	Auto Weapon Prof			Bonus to skill								Source Page
+Weapon Familiarity							KEY:Afflicted Kender ~ Weapon Familiarity	CATEGORY:Special Ability	TYPE:Kender Race Trait.SpecialQuality	DESC:Afflicted Kender treat any Kender exotic weapon as a simple weapon.						AUTO:WEAPONPROF|TYPE=Kender											SOURCEPAGE:P.144
++2 Racial bonus on Climb, Hide, Jump and Move Silently	KEY:Afflicted Kender ~ Skill Bonus		CATEGORY:Special Ability	TYPE:SpecialQuality.Kender Race Trait	DESC:Afflicted kender go out of their way to pass unnoticed and avoid drawing any attention to themselves.						BONUS:SKILL|Climb,Hide,Jump,Move Silently|2|TYPE=Racial	SOURCEPAGE:P.146
+
+###Block:Class
+##Handler
+# Ability Name				Unique Key					Category of Ability		Type									Source Page		Description
+Light-Fingered 				KEY:Light-Fingered ~ Handler			CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: As a handler, you become increasingly adept at lifting items from others without their noticing. You add your class level as a competence bonus to your Sleight of Hand check for the purposes of opposing the target’s Spot checks, but not for the check tolift the item itself. Thus, even you fail to get anything, the target may be none the wiser.
+Kender Tales 				KEY:Kender Tales ~ Handler			CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: You have a truly uncanny storehouse of useless trivia in your head from years of sharing gossip, folk legends, and outlandish accounts of nigh-mythic relatives. This ability functions exactly like a bard’s bardic knowledge ability, adding your class level and Intelligence modifier to the kender tale check. Levels in handler stack with levels in another class with a similar ability, such as bard or loremaster, for the purposes of the kender tale check.
+Improved Uncanny Dodge 			KEY:Improved Uncanny Dodge ~ Handler		CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: At 2nd level and higher, you can no longer be flanked; you can react to opponents on either side of you as easily as you can react to a single attacker. This defense denies a rogue the ability to sneak attack you by flanking, unless the attacker has at least four more rogue levels than you have levels in classes that provide the uncanny dodge ability.
+Five-Fingered Fighting 			KEY:Five-Fingered Fighting ~ Handler		CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC:At 3rd level and higher, you can make a Sleight of Hand check to lift an item from a target that is denied its Dexterity bonus to AC as part of a successful melee attack upon that target, without taking the standard –20 penalty for using the skill as a free action.
+Handler’s Luck 				KEY:Handler’s Luck ~ Handler			CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: At 4th level, your ability to get out of the way of trouble is enhanced. You may add a competence bonus equal to your Charisma bonus (if any) to all of your saving throws.
+Hide In Plain Sight 			KEY:Hide In Plain Sight ~ Handler		CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: At 5th level, you can use the Hide skill even while being observed. As long as you are within 10 feet of cover (including creatures of one size larger than yourself), you can hide yourself from view without anything substantial to actually hide behind.
+Defensive Roll 				KEY:Defensive Roll ~ Handler			CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: Starting at 6th level, you can roll with a potentially lethal blow to take less damage than you otherwise would. Once per day, if you would be reduced to 0 hit points or less by damage in combat (from a weapon or other blow, not a spell or special ability), you can attempt to roll with the damage. To use this ability, you must attempt a Reflex saving throw (DC = damage dealt). If the save succeeds, you take only half damage from the blow; if it fails, you take full damage. You must be aware of the attack and able to react to it in order to execute your defensive roll—if you are denied your Dexterity bonus to AC, you can’t use this ability. Since this effect would not normally allow a character to make a Reflex save for half damage, your evasion ability does not apply to the defensive roll. At 8th level, you can use this ability twice a day.
+Improved Five-Fingered Fighting 	KEY:Improved Five-Fingered Fighting ~ Handler	CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC:At 7th level, your five-fingered fighting ability works even on targets that are not denied their Dexterity bonus to AC. In addition, targets that are denied their Dexterity bonus to AC are no longer permitted a Spot check to notice you lifting the item.
+Improved Evasion 			KEY:Improved Evasion ~ Handler			CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: This ability, gained at 9th level, works like evasion. You take no damage on successful saving throws against attacks that allow a Reflex save for half damage. You take only half damage on failed saves. If helpless, you do not gain the benefit of improved evasion.
+Uncle’s Luck 				KEY:Uncle’s Luck ~ Handler			CATEGORY:Special Ability	TYPE:Extraordinary.Class Feature.Handler Class Feature.SpecialQuality	SOURCEPAGE:p.156	DESC: At 10th level, you have achieved your true calling and are elevated to the title of Uncle (or Aunt, if female). From this point, you may add a competence bonus equal to your Charisma bonus (if any) to the saving throws of any kender or half-kender within 30 feet who is aware of your presence. This does not stack with the handler’s luck ability in the event that one or more other handlers of 4th level or higher are in range.
+
+
+
+
+
+
+## Class Feature Blank
+#	KEY:xxx ~	CATEGORY:Special Ability	TYPE:xxx Class Feature.SpecialQuality	SOURCEPAGE:p.	DESC:
+
+# Race or Racial Trait Blank
+#	KEY:xxx ~
+#	CATEGORY:Special Ability
+#	TYPE:xxx Race Trait.Race Trait.SpecialQuality
+#	SOURCEPAGE:p.
+#	DESC:
+
+
+###Block: Barbarian Abilities
+# Ability Name	Unique Key			Category of Ability		Type						Description																																																																																																																																																																																																																					Modify VAR					Source Page
+#	Rage		KEY:Barbarian ~ Rage	CATEGORY:Special Ability	TYPE:Barbarian Class Feature.Rage	DESC:You can call upon inner reserves of strength and ferocity, granting you additional combat prowess. You can rage for %1 rounds per day. You can enter rage as a free action. The total number of rounds of rage per day is renewed after resting for 8 hours, although these hours do not need to be consecutive. While in rage, you gain a +%2 morale bonus to your Strength and a +%3 morale bonus to Constitution, as well as a +%4 morale bonus on Will saves. In addition, you take a -2 penalty to Armor Class. The increase to Constitution grants you %5 hit points, but these disappear when the rage ends and are not lost first like temporary hit points. While in rage, you cannot use any Charisma-, Dexterity-, or Intelligence-based skills (except Acrobatics, Fly, Intimidate, and Ride) or any ability that requires patience or concentration. You can end your rage as a free action and are fatigued after rage for a number of rounds equal to 2 times the number of rounds spent in the rage. You cannot enter a new rage while fatigued or exhausted but can otherwise enter rage multiple times during a single encounter or combat. If you fall unconscious, your rage immediately ends, placing you in peril of death.|RageDuration|RageStrBonus|RageConBonus|RageSaveBonus|(RageConBonus/2)*TL	BONUS:VAR|RageLVL|BarbarianLVL	SOURCEPAGE:p.32
+
+#	Defensive Training	KEY:Dwarf ~ Defensive Training	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.Dwarf Racial Trait	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Defensive Training],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DwarfDefensiveTraining]	DEFINE:RacialDefensiveTrainingBonus|0	DESC:Dwarves get a +%1 dodge bonus to AC against humanoid creatures of the giant subtype.|RacialDefensiveTrainingBonus		BONUS:VAR|RacialDefensiveTrainingBonus|4		SOURCEPAGE:p.21	ASPECT:CombatBonus|+%1 dodge bonus to AC against humanoid creatures of the giant subtype.|RacialDefensiveTrainingBonus
+
+#insert your data here
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Feat File tags" to find
+#out how the tags in the feats file work. Some of the tags used here are global tags. You will see an alphabetical
+#listing of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+# Abilities are the newest method for all aspects of class & race abilities. Currently we use hidden feats to emulate
+# class and racial abilities. The advent of Abilities allows us to use one standard format for a variety of things.
+# Generally Abilities are exactly the same in format as a Feat with the exception of a NEW tag CATEGORY which tells
+# PCGen what the ability is to be categoried as - example: My Ability is part of the my_abilities category, So I can add
+# points only to the my_abilities allowing very small and restricted lists. Another example would be Fighter Bonus feats.
+#
+# Feat and ability are used through out this example as they almost the same thing - ABILITY can also be used to add "Feats"
+# using the CATEGORY:FEAT tag.
+# You can also use PREFEAT for any CATEGORY:FEAT, for the rest you'll need to use PREABILITY:x,CATEGORY=<category>,Foo,TYPE.Bar (x is the number)
+#####1st Example
+
+#####
+#Each ability takes one line, just like a feat, and the first field must be the abilities' name. In the Example the name of the ability is My Ability.
+#When naming feats you should only use parentheses at the end of the name if the name is not duplicated elsewhere. This is
+#because of how PCGen names abilities which can be taken multiple times. For example, the Feat/ability Weapon Focus when taken will display
+#as Weapon Focus(Dagger). Another example is Armor Proficiency (Light), there is no feat named Armor Proficiency so this name
+#is fine. What is happening is when PCGen finds a feat with parentheses that duplicates the name of another feat it assumes
+#that feat is an instance of the one without parentheses and does not display the one with parentheses.
+#
+#The TYPE tag is holding a . (period) delimited list of the types the ability/feat is.
+#
+#The DESC tag is used to hold the description of the Ability/Feat. In our files we usually keep the description brief, so the user
+#still need to own the book to make use of of the data, but for your personal files can get as elaborate as you want there.
+#
+#The MULT tag determines if a ability/feat can be taken multiple times. If the value is set to YES, then you MUST also use a CHOOSE
+#tag.
+#
+#The CHOOSE tag must be paired with a MULT:YES tag in feats for it to work properly. It will display a popup window that asks
+#for a selection according to what is being called for. There is a multitude of existing CHOOSE tags in PCGen. If you are
+#looking into the documentation under List File Tag Index, you can find them listed under the topic "CHOOSE tags".
+#
+#The BONUS tags are a group of similar tags, that grant some form of Bonus to another already existing tag. To read a description
+#of them, look in the List File Tag Index under the topic "Bonus tags".
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the feat. This will be displayed in PCGen.

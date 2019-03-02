@@ -1,0 +1,57 @@
+
+To add Sub Race: Place in Ability File?
+Tarmak (Krynn)
+	KEY:Ithin’carthians ~ Tarmak (Krynn)
+	CATEGORY:Internal
+	TYPE:Ithin’carthiansSubrace.Krynn_Campaign
+
+Don't Know how to add/Create Regions. Can someone help or Point me to where to find the Directions to do so.
+
+Sample Reagon I want to Create
+Region	Abanasinia
+Favored Class: Master or Rouge
+Bonus First Level Feat Choice additions:Persuasive,Skill Focus,Toughness
+Automatic Class Skills:Profession
+Automatic Languages:Abanasinian,Common
+Bonus Languages: Camptalk, Dwarven, Elven,Kharolian, Solamnic
+Auto Equipment choice if first level is Master or Rouge: Masterwork studded leather armor or masterwork artisan’s tools.
+
+
+
+
+Race to add:Ithin’carthians A subrace of humans But will be adding as a race with 3 Sub races(Stats are Derived by one of 3 Sub races)
+Stats Dependent on Subtype
+###Tarmak as Race  Dont know how to make starting feat to choose from fighter bonus list, or how to implement the restrictions on skills
+Tarmak
+	KEY:Tarmak
+	SORTKEY:Tarmak
+	SIZE:M
+	SOURCEPAGE:p.
+	RACETYPE:Humanoid
+	TYPE:Humanoid.PC
+	RACESUBTYPE:Tarmak.Ithin’carthians
+	MOVE:Walk,30
+	BONUS:VAR|Manueverability|0
+	BONUS:VAR|AC_Natural_Armor|0|TYPE=Base
+	FACE:5
+	REACH:5
+	LEGS:2
+	HANDS:2
+	STARTFEATS:1	Can only Choose from Fighter Bonus List
+	FACT:HasFirstLevelFeat|True
+	BONUS:STAT|STR|2
+	BONUS:STAT|DEX|0
+	BONUS:STAT|CON|0
+	BONUS:STAT|INT|-2
+	BONUS:STAT|WIS|0
+	BONUS:STAT|CHA|-2
+	ABILITY:Internal|AUTOMATIC|Racial Traits ~ Tarmak
+	FACT:IsPC|True
+	ABILITY:AUTOMATIC|FEAT|Hulking Brute
+	AUTO:LANG|Tarmakian
+	LANGBONUS:Common,Damjatt,Keena,Nerakese
+	FAVCLASS:Barbarian
+	4 extra skill points at 1st level and 1 extra skill point at
+each level thereafter. These bonus skill points may only
+be spent on Strength, Dexterity, or Constitution-based
+skils.

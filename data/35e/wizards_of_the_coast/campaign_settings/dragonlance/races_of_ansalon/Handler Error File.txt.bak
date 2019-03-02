@@ -1,0 +1,52 @@
+Trying to make Handler Prestige Class and getting:
+
+00:30:21.511 INFO Thread-51 SourceFileLoader:534 Loading game 35e and sources [Dungeons & Dragons - Core Books, Dragonlance Campaign Setting, Races of Ansalon, Rhygar House Rules].
+00:32:08.262 SEVERE Thread-51 CDOMFactory:105 Unconstructed Reference: AbilityCategory Class Ability
+00:32:08.266 SEVERE Thread-51 TrackingReferenceContext:102   Was used in file:/C:/Users/Jasoneagle/AppData/Local/PCGen/Bahamut's%20Datasets/pcgen-6.08/data/homebrew/35e/wizards_of_the_coast/campaign_settings/dragonlance/races_of_ansalon/roa_abilitycategories.lst in tokens: [plugin.lsttokens.gamemode.abilitycategory.CategoryToken]
+
+Aside form the Ablity Category file Entry I followed the Video For Creating the Arcane Juggler and the
+Entry from the Category file is a Copy/Paste of the Rogue Class line from the Data Set I am Using with Rouge replaced by Handler.
+I am at a loss as to what I did wrong. How do I get the Handlers Ability's to Show in the Class Ability TAB?
+This is all the Data I have Entered:
+
+All list files reformated by PCGen PrettyLST v6.08.00
+
+# Class Name	Hit Dice	Type			Max Level	Source Page		Combat bonus						Save bonus
+CLASS:Handler	HD:6		TYPE:Prestige.PC	MAXLEVEL:10	SOURCEPAGE:p.156	BONUS:COMBAT|BASEAB|CL*3/4|TYPE=BASE.REPLACE:	BONUS:SAVE|BASE.Reflex|CL/2+2	BONUS:SAVE|BASE.Will,BASE.Fortitude|CL/3
+# Class Name	Required Ability																			Required Check Base	Required Race			Required Skill
+CLASS:Handler	PREABILITY:1,CATEGORY=Special Ability,Evasion	PREABILITY:1,CATEGORY=Special Ability,Uncanny Dodge,Improved Uncanny Dodge	PRECHECKBASE:1,Reflex=4	PRERACE:1,Kender,Half Kender	PRESKILL:3,Bluff=6,Hide=6,Sleight of Hand=6
+# Class Name	Skill Pts/Lvl	Class Skill
+CLASS:Handler	STARTSKILLPTS:4	CSKILL:Balance|Bluff|Concentration|TYPE=Craft|Diplomacy|Disable Device|Escape Artist|Gather Information|Hide|Knowledge (Arcana)|Knowledge (Local)|Knowledge (Religion)|Listen|Move Silently|Open Lock|TYPE=Profession|Search|Sleight of Hand|Spellcraft|Spot|Survival|Use Magic Device|Use Rope
+
+##Block
+1	ABILITY:Special Ability|AUTOMATIC|Light-Fingered ~ Handler|Kender Tales ~ Handler
+2	ABILITY:Special Ability|AUTOMATIC|Improved Uncanny Dodge ~ Handler
+3	ABILITY:Special Ability|AUTOMATIC|Five-Fingered Fighting ~ Handler
+4	ABILITY:Special Ability|AUTOMATIC|Handler’s Luck ~ Handler
+5	ABILITY:Special Ability|AUTOMATIC|Hide In Plain Sight ~ Handler
+6	ABILITY:Special Ability|AUTOMATIC|Defensive Roll ~ Handler
+7	ABILITY:Special Ability|AUTOMATIC|Improved Five-Fingered Fighting ~ Handler
+8	ABILITY:Special Ability|AUTOMATIC|Defensive Roll ~ Handler
+9	ABILITY:Special Ability|AUTOMATIC|Improved Evasion ~ Handler
+10	ABILITY:Special Ability|AUTOMATIC|Uncle’s Luck ~ Handler
+
+
+Ability File:
+#Handler
+
+# Ability Name					Unique Key							Category of Ability		Type									Description																																																																																																																																															Source Page
+Light-Fingered (Ex)				KEY:Light-Fingered ~ Handler				CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: As a handler, you become increasingly adept at lifting items from others without their noticing. You add your class level as a competence bonus to your Sleight of Hand check for the purposes of opposing the target’s Spot checks, but not for the check tolift the item itself. Thus, even you fail to get anything, the target may be none the wiser.																																																																																						SOURCEPAGE:p.156
+Kender Tales (Ex)					KEY:Kender Tales ~ Handler				CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: You have a truly uncanny storehouse of useless trivia in your head from years of sharing gossip, folk legends, and outlandish accounts of nigh-mythic relatives. This ability functions exactly like a bard’s bardic knowledge ability, adding your class level and Intelligence modifier to the kender tale check. Levels in handler stack with levels in another class with a similar ability, such as bard or loremaster, for the purposes of the kender tale check.																																																																				SOURCEPAGE:p.156
+Improved Uncanny Dodge (Ex)			KEY:Improved Uncanny Dodge ~ Handler		CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: At 2nd level and higher, you can no longer be flanked; you can react to opponents on either side of you as easily as you can react to a single attacker. This defense denies a rogue the ability to sneak attack you by flanking, unless the attacker has at least four more rogue levels than you have levels in classes that provide the uncanny dodge ability.																																																																																					SOURCEPAGE:p.156
+Five-Fingered Fighting (Ex)			KEY:Five-Fingered Fighting ~ Handler		CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC:At 3rd level and higher, you can make a Sleight of Hand check to lift an item from a target that is denied its Dexterity bonus to AC as part of a successful melee attack upon that target, without taking the standard –20 penalty for using the skill as a free action.																																																																																																			SOURCEPAGE:p.156
+Handler’s Luck (Ex)				KEY:Handler’s Luck ~ Handler				CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: At 4th level, your ability to get out of the way of trouble is enhanced. You may add a competence bonus equal to your Charisma bonus (if any) to all of your saving throws.																																																																																																																			SOURCEPAGE:p.156
+Hide In Plain Sight (Ex)			KEY:Hide In Plain Sight ~ Handler			CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: At 5th level, you can use the Hide skill even while being observed. As long as you are within 10 feet of cover (including creatures of one size larger than yourself), you can hide yourself from view without anything substantial to actually hide behind.																																																																																																					SOURCEPAGE:p.156
+Defensive Roll (Ex)				KEY:Defensive Roll ~ Handler				CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: Starting at 6th level, you can roll with a potentially lethal blow to take less damage than you otherwise would. Once per day, if you would be reduced to 0 hit points or less by damage in combat (from a weapon or other blow, not a spell or special ability), you can attempt to roll with the damage. To use this ability, you must attempt a Reflex saving throw (DC = damage dealt). If the save succeeds, you take only half damage from the blow; if it fails, you take full damage. You must be aware of the attack and able to react to it in order to execute your defensive roll—if you are denied your Dexterity bonus to AC, you can’t use this ability. Since this effect would not normally allow a character to make a Reflex save for half damage, your evasion ability does not apply to the defensive roll. At 8th level, you can use this ability twice a day.	SOURCEPAGE:p.156
+Improved Five-Fingered Fighting (Ex)	KEY:Improved Five-Fingered Fighting ~ Handler	CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC:At 7th level, your five-fingered fighting ability works even on targets that are not denied their Dexterity bonus to AC. In addition, targets that are denied their Dexterity bonus to AC are no longer permitted a Spot check to notice you lifting the item.																																																																																																					SOURCEPAGE:p.156
+Improved Evasion (Ex)				KEY:Improved Evasion ~ Handler			CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: This ability, gained at 9th level, works like evasion. You take no damage on successful saving throws against attacks that allow a Reflex save for half damage. You take only half damage on failed saves. If helpless, you do not gain the benefit of improved evasion.																																																																																																			SOURCEPAGE:p.156
+Uncle’s Luck (Ex)					KEY:Uncle’s Luck ~ Handler				CATEGORY:Special Ability	TYPE:HandlerClassAbility.ClassAbility.SpecialQuality	DESC: At 10th level, you have achieved your true calling and are elevated to the title of Uncle (or Aunt, if female). From this point, you may add a competence bonus equal to your Charisma bonus (if any) to the saving throws of any kender or half-kender within 30 feet who is aware of your presence. This does not stack with the handler’s luck ability in the event that one or more other handlers of 4th level or higher are in range.																																																																								SOURCEPAGE:p.156
+
+Ability Category File:
+
+# Ability Category				Visible		Editable?		Change Pool?	Category of Object	Type of Object			Plural description for UI	Display Location
+ABILITYCATEGORY:Handler Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Class Ability	TYPE:Handler Class Feature	PLURAL:Handler Class Features	DISPLAYLOCATION:Class Features
