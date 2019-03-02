@@ -1,5 +1,0 @@
-Notes:
-Weapon:Hoopak - 100% Complete (Stats Derived From Text. Only Two Modes can be Displayed, Thrown Stats given via SPROP Tag)
-Race:Kinder:Walk-30|Weapon Familiarity:Kender Per:Races of Ansalon stats. - 100% Completed (Via MOD of dcs Source)
-Required Source to load: Dragonlance Campaign Setting. - 100% Completed (Items and Mods Referance Base Campaign made a Requirement)
-Class:Handler - Kender only Prestige Class - 90% Complete (Need to get Handler Class abilities to Display on Class Ability Tab in PCGen)
